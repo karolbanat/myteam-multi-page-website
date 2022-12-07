@@ -1,0 +1,13 @@
+@use './variables';
+
+@function get-color($color, $shade) {
+	$color: map-get(
+		$map:
+			map-get(
+				$map: variables.$colors,
+				$key: $color,
+			),
+		$key: $shade,
+	);
+	@return $color;
+}
