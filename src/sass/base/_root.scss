@@ -10,6 +10,7 @@
 	}
 
 	/* font families */
+	--ff-primary: 'Livvic', sans-serif;
 
 	/* font weights */
 	@each $font-weight, $value in variables.$font-weights {
@@ -34,12 +35,5 @@
 	/* border radius */
 	@each $radius, $value in variables.$border-radius {
 		--borr-#{$radius}: #{$value};
-	}
-
-	/* spacings */
-	@each $unit, $sizes in variables.$spacings {
-		@each $size, $value in $sizes {
-			--spacing-#{$unit}-#{$size}: #{$value};
-		}
 	}
 }

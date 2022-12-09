@@ -1,0 +1,13 @@
+body {
+	font-family: var(--ff-primary);
+	font-size: var(--fz-450);
+	font-weight: var(--fw-regular, 400);
+	background-color: var(--clr-primary-500);
+	color: var(--clr-neutral-100);
+}
+
+h1,
+h2,
+h3 {
+	font-weight: var(--fw-bold, 700);
+}
