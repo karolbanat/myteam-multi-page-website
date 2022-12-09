@@ -1,0 +1,23 @@
+.skip-link {
+	/* positioning */
+	position: absolute;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	transform: translateY(-120%);
+	display: inline-block;
+	padding: 1em;
+	/* typography */
+	font-weight: var(--fw-700);
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--clr-neutral-200);
+	/* appearance */
+	background-color: var(--clr-primary-600);
+	/* other */
+	transition: transform 0.35s ease;
+
+	&:focus {
+		transform: translateY(0);
+	}
+}
