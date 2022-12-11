@@ -1,0 +1,56 @@
+@use '../abstracts/mixins' as mxn;
+
+.testimonial {
+	--avatar-size: 6.2rem;
+	position: relative;
+	isolation: isolate;
+	display: grid;
+	gap: 1.6rem;
+	padding-block-start: 3.6rem;
+	text-align: center;
+	font-size: var(--fz-400);
+	height: 100%;
+	@include mxn.mq(large) {
+		gap: 2.4rem;
+	}
+
+	&__caption {
+		margin-top: auto;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 50%;
+		width: 6.7rem;
+		height: 5.6rem;
+		background-image: url('../assets/icons/icon-quotes.svg');
+		transform: translateX(-50%);
+	}
+
+	&__author-name {
+		font-size: var(--fz-500);
+		font-weight: var(--fw-bold);
+		color: var(--clr-primary-300);
+	}
+
+	&__position {
+		font-style: italic;
+		font-size: var(--fz-200);
+		font-weight: 500;
+	}
+
+	&__avatar {
+		margin-block-start: 1.6rem;
+		margin-inline: auto;
+		width: var(--avatar-size);
+		aspect-ratio: 1 / 1;
+		border: 2px solid var(--clr-primary-200);
+		border-radius: var(--borr-circle);
+		@include mxn.mq(large) {
+			margin-block-start: 3.2rem;
+		}
+	}
+}

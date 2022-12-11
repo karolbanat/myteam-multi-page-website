@@ -7,5 +7,9 @@
 		&[data-spacer='tight'] {
 			padding-block: 6.4rem;
 		}
+		&[data-spacer='loose'] {
+			padding-block-start: 14rem;
+			padding-block-end: 16.4rem;
+		}
 	}
 }

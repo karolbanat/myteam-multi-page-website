@@ -34,3 +34,24 @@
 		padding-inline-end: 8.8rem;
 	}
 }
+
+.testimonials-section {
+	--bg-image-top-left: url('../assets/backgrounds/bg-pattern-home-4-about-3.svg');
+	--bg-top-left-position: top left;
+	--bg-image-bottom-right: url('../assets/backgrounds/bg-pattern-home-5.svg');
+	--bg-bottom-right-position: bottom right;
+
+	background-image: var(--bg-image-top-left), var(--bg-image-bottom-right);
+	background-repeat: no-repeat, no-repeat;
+	background-position: var(--bg-top-left-position), var(--bg-bottom-right-position);
+
+	.section-heading {
+		margin-block-end: 4.8rem;
+		@include mxn.mq(medium) {
+			padding-inline: 1.75em;
+		}
+		@include mxn.mq(large) {
+			margin-block-end: 5.6rem;
+		}
+	}
+}
