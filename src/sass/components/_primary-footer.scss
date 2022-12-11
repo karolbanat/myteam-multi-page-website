@@ -1,0 +1,91 @@
+@use '../abstracts/mixins' as mxn;
+
+.primary-footer {
+	padding-block: 6.4rem;
+	text-align: center;
+	background-color: var(--clr-neutral-900);
+	@include mxn.mq(medium) {
+		padding-block: 5.6rem;
+	}
+	@include mxn.mq(large) {
+		padding-block: 4.8rem;
+	}
+
+	&__body {
+		display: grid;
+		justify-items: center;
+		gap: 2.4rem;
+		grid-template-areas:
+			'navigation'
+			'address'
+			'socials'
+			'copyright';
+		@include mxn.mq(medium) {
+			grid-template-areas:
+				'navigation address'
+				'socials copyright';
+			gap: 3.2rem;
+		}
+		@include mxn.mq(large) {
+			grid-template-areas:
+				'navigation address socials'
+				'navigation address copyright';
+			grid-auto-columns: auto auto 1fr;
+			column-gap: min(10vw, 12.5rem);
+		}
+	}
+
+	&__navigation {
+		--flex-spacer: 2.4rem;
+		grid-area: navigation;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 2.4rem;
+		@include mxn.mq(medium) {
+			justify-self: start;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		@include mxn.mq(large) {
+			--flex-spacer: 4rem;
+		}
+	}
+
+	&__address {
+		grid-area: address;
+		font-style: normal;
+		@include mxn.mq(medium) {
+			justify-self: end;
+			text-align: end;
+		}
+		@include mxn.mq(large) {
+			justify-self: start;
+			text-align: start;
+		}
+	}
+
+	&__socials {
+		grid-area: socials;
+		@include mxn.mq(medium) {
+			justify-self: start;
+		}
+		@include mxn.mq(large) {
+			justify-self: end;
+		}
+	}
+
+	&__copyright {
+		grid-area: copyright;
+		@include mxn.mq(medium) {
+			place-self: end;
+			text-align: end;
+		}
+	}
+
+	&__copyright,
+	&__address {
+		font-size: var(--fz-400);
+		opacity: 0.6;
+	}
+}

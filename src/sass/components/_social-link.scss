@@ -1,0 +1,9 @@
+.social-link {
+	--icon-fill: var(--clr-neutral-100);
+	display: inline-grid;
+
+	&:hover,
+	&:focus-visible {
+		--icon-fill: var(--clr-accent-400);
+	}
+}
