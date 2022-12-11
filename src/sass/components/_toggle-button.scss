@@ -1,0 +1,22 @@
+.toggle-button {
+	--size: 3.2rem;
+	display: inline-grid;
+	place-items: center;
+	width: var(--size);
+	aspect-ratio: 1 / 1;
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	&[aria-expanded='false'] &__icon-close {
+		display: none;
+	}
+
+	&[aria-expanded='true'] &__icon-close {
+		display: block;
+	}
+
+	&[aria-expanded='true'] &__icon-open {
+		display: none;
+	}
+}

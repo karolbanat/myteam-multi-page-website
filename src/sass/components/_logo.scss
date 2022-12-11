@@ -1,0 +1,15 @@
+@use '../abstracts/mixins' as mxn;
+
+.logo {
+	max-width: var(--logo-size, 100%);
+
+	@include mxn.max-mq(large) {
+		&[data-size='medium'] {
+			--logo-size: 12.8rem;
+		}
+
+		&[data-size='small'] {
+			--logo-size: 9.6rem;
+		}
+	}
+}

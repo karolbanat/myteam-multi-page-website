@@ -1,0 +1,30 @@
+.button {
+	display: inline-block;
+	padding-block: 0.65em;
+	padding-inline: 1.85em;
+	font-size: var(--fz-500);
+	line-height: 1.15;
+	text-decoration: none;
+	color: var(--button-text, currentColor);
+	background-color: var(--button-background);
+	border: 2px solid var(--border-color);
+	border-radius: var(--borr-pill);
+	cursor: pointer;
+	transition: color 0.35s ease, background-color 0.35s ease, border-color 0.35s ease;
+
+	&:hover,
+	&:focus-visible {
+		--button-background: var(--button-background-hover);
+		--button-text: var(--button-text-hover);
+		--border-color: var(--border-color-hover);
+	}
+
+	&--light {
+		--button-text: var(--clr-neutral-100);
+		--button-text-hover: var(--clr-neutral-900);
+		--button-background: transparent;
+		--button-background-hover: var(--clr-neutral-100);
+		--border-color: currentColor;
+		--border-color-hover: var(--clr-neutral-100);
+	}
+}
