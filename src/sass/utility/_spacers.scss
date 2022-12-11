@@ -1,0 +1,11 @@
+@use '../abstracts/mixins' as mxn;
+
+.section-spacer {
+	padding-block: clamp(10rem, 12.5vw, 14rem);
+
+	@include mxn.max-mq(medium) {
+		&[data-spacer='tight'] {
+			padding-block: 6.4rem;
+		}
+	}
+}

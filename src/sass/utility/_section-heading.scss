@@ -1,0 +1,9 @@
+.section-heading {
+	font-size: var(--fz-650);
+	font-weight: var(--fw-bold, 700);
+	line-height: 1;
+
+	&[data-highlight='primary'] span {
+		color: var(--clr-primary-300);
+	}
+}

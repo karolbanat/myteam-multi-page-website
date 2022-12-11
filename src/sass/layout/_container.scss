@@ -3,4 +3,8 @@
 	--padding-inline: clamp(2.4rem, 6vw, 4rem);
 	margin-inline: auto;
 	width: min(var(--max-width), 100% - 2 * var(--padding-inline));
+
+	&[data-inline-size='medium'] {
+		--padding-inline: clamp(2.4rem, -7.5rem + 22.5vw, 9.6rem);
+	}
 }
