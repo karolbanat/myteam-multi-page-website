@@ -1,0 +1,26 @@
+@use '../abstracts/mixins' as mxn;
+
+.cta {
+	padding-block: 8.4rem;
+	text-align: center;
+	color: var(--clr-neutral-800);
+	background-color: var(--clr-accent-400);
+	/* background image */
+	background-image: url('../assets/backgrounds/bg-pattern-home-6-about-5.svg');
+	background-repeat: no-repeat;
+	background-position: bottom -2rem left;
+	@include mxn.mq(medium) {
+		padding-block: 7.6rem;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2.4rem;
+		@include mxn.mq(medium) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}
