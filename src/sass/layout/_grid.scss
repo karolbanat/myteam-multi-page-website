@@ -1,0 +1,19 @@
+@use '../abstracts/mixins' as mxn;
+
+.intro-grid {
+	display: grid;
+	gap: var(--intro-spacer, 1em);
+	@include mxn.mq(medium) {
+		--intro-spacer: 2.4rem;
+	}
+	@include mxn.mq(large) {
+		--intro-spacer: 3rem;
+		grid-template-columns: var(--first-column, 1fr) var(--second-column, 1fr);
+	}
+
+	&[data-grid='slightly-uneven'] {
+		/* sizes from design */
+		--first-column: calc(63.5 / 111 * 100%);
+		--second-column: calc(44.5 / 111 * 100%);
+	}
+}
