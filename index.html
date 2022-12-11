@@ -3,34 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./dist/assets/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./dist/assets/favicon-32x32.png">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="./dist/css/main.min.css">
 
     <title>Frontend Mentor | myteam website challenge - Homepage</title>
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content"
+       class="skip-link">Skip to main content</a>
     <header>
         <div class="container">
-            <nav aria-label="Primary" class="primary-navigation">
-                <a href="#"><img src="./dist/assets/logo.svg" alt="myteam" class="logo" data-size="medium"></a>
-                <button aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu"
+            <nav aria-label="Primary"
+                 class="primary-navigation">
+                <a href="#"><img src="./dist/assets/logo.svg"
+                         alt="myteam"
+                         class="logo"
+                         data-size="medium"></a>
+                <button aria-controls="primary-nav"
+                        aria-expanded="false"
+                        aria-label="Open menu"
                         class="toggle-button primary-navigation__menu-toggle">
-                    <img src="./dist/assets/icons/icon-hamburger.svg" alt="" class="toggle-button__icon-open">
-                    <img src="./dist/assets/icons/icon-close.svg" alt="" class="toggle-button__icon-close">
+                    <img src="./dist/assets/icons/icon-hamburger.svg"
+                         alt=""
+                         class="toggle-button__icon-open">
+                    <img src="./dist/assets/icons/icon-close.svg"
+                         alt=""
+                         class="toggle-button__icon-close">
                 </button>
-                <div id="primary-nav" class="primary-navigation__nav">
+                <div id="primary-nav"
+                     class="primary-navigation__nav">
                     <ul class="primary-navigation__nav-list">
-                        <li><a href="#" class="link primary-navigation__nav-link">home</a></li>
-                        <li><a href="./about.html" class="link primary-navigation__nav-link">about</a></li>
+                        <li><a href="#"
+                               class="link primary-navigation__nav-link">home</a></li>
+                        <li><a href="./about.html"
+                               class="link primary-navigation__nav-link">about</a></li>
                     </ul>
-                    <a href="./contact.html" class="button button--light">contact us</a>
+                    <a href="./contact.html"
+                       class="button button--light">contact us</a>
                 </div>
             </nav>
         </div>
@@ -38,18 +62,23 @@
 
     <main id="main-content">
         <!-- intro section start -->
-        <section aria-labelledby="intro-heading" class="intro-section">
+        <section aria-labelledby="intro-heading"
+                 class="intro-section | intro-home"
+                 data-space="large">
             <div class="container">
-                <div class="intro-section__body">
-                    <h1 id="intro-heading" class="primary-heading" data-size="large" data-highlight="accent">Find the
-                        best
-                        <span>talent</span>
+                <div class="intro-section__body"
+                     data-grid="home">
+                    <h1 id="intro-heading"
+                        class="intro-section__heading"
+                        data-size="large"
+                        data-highlight="accent">Find
+                        the<br> best <span>talent</span>
                     </h1>
-                    <p class="text-line-decoration" data-color="primary" data-screen="large">Finding the right people
-                        and
-                        building high performing teams can
-                        be hard. Most companies aren’t tapping into the abundance of global
-                        talent. We’re about to change that.</p>
+                    <p class="intro-section__text | text-line-decoration"
+                       data-color="primary"
+                       data-screen="large">
+                        Finding the right people and building high performing teams can be hard. Most companies aren’t
+                        tapping into the abundance of global talent. We’re about to change that.</p>
                 </div>
             </div>
         </section>
@@ -59,14 +88,18 @@
         <section aria-labelledby="features-heading">
             <div class="container">
                 <header>
-                    <h2 id="features-heading" class="section-heading | text-line-decoration" data-color="accent">Build &
+                    <h2 id="features-heading"
+                        class="section-heading | text-line-decoration"
+                        data-color="accent">Build &
                         manage distributed teams like no one else.</h2>
                 </header>
                 <div>
                     <!-- features list start -->
                     <ul class="feature-list">
                         <li class="feature-card">
-                            <img src="./dist/assets/icons/icon-person.svg" alt="" class="feature-card__icon">
+                            <img src="./dist/assets/icons/icon-person.svg"
+                                 alt=""
+                                 class="feature-card__icon">
                             <div class="feature-card__body">
                                 <h3 class="feature-card__heading">Experienced Individuals</h3>
                                 <p>Our network is made up of highly experienced professionals who are
@@ -74,7 +107,9 @@
                             </div>
                         </li>
                         <li class="feature-card">
-                            <img src="./dist/assets/icons/icon-cog.svg" alt="" class="feature-card__icon">
+                            <img src="./dist/assets/icons/icon-cog.svg"
+                                 alt=""
+                                 class="feature-card__icon">
                             <div class="feature-card__body">
                                 <h3 class="feature-card__heading">Easy to Implement</h3>
                                 <p>Our processes have been refined over years of implementation meaning
@@ -82,7 +117,9 @@
                             </div>
                         </li>
                         <li class="feature-card">
-                            <img src="./dist/assets/icons/icon-chart.svg" alt="" class="feature-card__icon">
+                            <img src="./dist/assets/icons/icon-chart.svg"
+                                 alt=""
+                                 class="feature-card__icon">
                             <div class="feature-card__body">
                                 <h3 class="feature-card__heading">Enhanced Productivity</h3>
                                 <p>Our customized platform with in-built analytics helps you manage your
@@ -99,7 +136,9 @@
         <!-- testimonials section start -->
         <section aria-labelledby="testimonials-heading">
             <div class="container">
-                <h2 id="testimonials-heading" class="section-heading" data-highlight="primary">Delivering real results
+                <h2 id="testimonials-heading"
+                    class="section-heading"
+                    data-highlight="primary">Delivering real results
                     for top companies. Some of our <span>success stories.</span></h2>
                 <!-- testimonials list start -->
                 <ul class="testimonials-grid">
@@ -114,7 +153,9 @@
                             <figcaption class="testimonial__caption">
                                 <p class="testimonial__author-name">Kady Baker</p>
                                 <p class="testimonial__position">Product Manager at Bookmark</p>
-                                <img src="./dist/assets/avatars/avatar-kady.jpg" alt="" class="testimonial__avatar">
+                                <img src="./dist/assets/avatars/avatar-kady.jpg"
+                                     alt=""
+                                     class="testimonial__avatar">
                             </figcaption>
                         </figure>
                     </li>
@@ -130,7 +171,9 @@
                             <figcaption class="testimonial__caption">
                                 <p class="testimonial__author-name">Aiysha Reese</p>
                                 <p class="testimonial__position">Founder of Manage</p>
-                                <img src="./dist/assets/avatars/avatar-aiysha.jpg" alt="" class="testimonial__avatar">
+                                <img src="./dist/assets/avatars/avatar-aiysha.jpg"
+                                     alt=""
+                                     class="testimonial__avatar">
                             </figcaption>
                         </figure>
                     </li>
@@ -146,7 +189,9 @@
                             <figcaption class="testimonial__caption">
                                 <p class="testimonial__author-name">Arthur Clarke</p>
                                 <p class="testimonial__position">Co-founder of MyPhysio</p>
-                                <img src="./dist/assets/avatars/avatar-arthur.jpg" alt="" class="testimonial__avatar">
+                                <img src="./dist/assets/avatars/avatar-arthur.jpg"
+                                     alt=""
+                                     class="testimonial__avatar">
                             </figcaption>
                         </figure>
                     </li>
@@ -161,7 +206,8 @@
         <section class="cta">
             <div class="container">
                 <h2 class="section-heading">Ready to get started?</h2>
-                <a href="./contact.html" class="button">contact us</a>
+                <a href="./contact.html"
+                   class="button">contact us</a>
             </div>
         </section>
         <!-- cta section end -->
@@ -171,11 +217,17 @@
         <div class="container">
             <div class="primary-footer__body">
                 <!-- footer nav -->
-                <nav aria-label="footer" class="primary-footer__navigation">
-                    <a href="#"><img src="./dist/assets/logo.svg" alt="myteam" class="logo" data-size="small"></a>
+                <nav aria-label="footer"
+                     class="primary-footer__navigation">
+                    <a href="#"><img src="./dist/assets/logo.svg"
+                             alt="myteam"
+                             class="logo"
+                             data-size="small"></a>
                     <ul class="flex">
-                        <li><a href="#" class="link">home</a></li>
-                        <li><a href="./about.html" class="link">about</a></li>
+                        <li><a href="#"
+                               class="link">home</a></li>
+                        <li><a href="./about.html"
+                               class="link">about</a></li>
                     </ul>
                 </nav>
 
@@ -190,18 +242,27 @@
                 <!-- socials list -->
                 <ul class="flex">
                     <li>
-                        <a aria-label="Facebook" href="#" class="social-link">
-                            <img src="./dist/assets/icons/icon-facebook.svg" alt="">
+                        <a aria-label="Facebook"
+                           href="#"
+                           class="social-link">
+                            <img src="./dist/assets/icons/icon-facebook.svg"
+                                 alt="">
                         </a>
                     </li>
                     <li>
-                        <a aria-label="Pinterest" href="#" class="social-link">
-                            <img src="./dist/assets/icons/icon-pinterest.svg" alt="">
+                        <a aria-label="Pinterest"
+                           href="#"
+                           class="social-link">
+                            <img src="./dist/assets/icons/icon-pinterest.svg"
+                                 alt="">
                         </a>
                     </li>
                     <li>
-                        <a aria-label="Twitter" href="#" class="social-link">
-                            <img src="./dist/assets/icons/icon-twitter.svg" alt="">
+                        <a aria-label="Twitter"
+                           href="#"
+                           class="social-link">
+                            <img src="./dist/assets/icons/icon-twitter.svg"
+                                 alt="">
                         </a>
                     </li>
                 </ul>
@@ -212,7 +273,8 @@
         </div>
     </footer>
 
-    <script src="./dist/js/main.min.js" defer></script>
+    <script src="./dist/js/main.min.js"
+            defer></script>
 </body>
 
 </html>

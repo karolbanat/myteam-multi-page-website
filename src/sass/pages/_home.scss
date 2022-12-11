@@ -1,0 +1,19 @@
+@use '../abstracts/mixins' as mxn;
+
+.intro-home {
+	--bg-left: url('../../../dist/assets/backgrounds/bg-pattern-home-1.svg');
+	--bg-left-position: -10rem clamp(3.2rem, 6.25vw, 4.8rem);
+	--bg-bottom: url('../../../dist/assets/backgrounds/bg-pattern-home-2.svg');
+	--bg-bottom-position: bottom center;
+
+	background-image: var(--bg-bottom);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+
+	@include mxn.mq(large) {
+		--bg-bottom-position: bottom right 16.5rem;
+		background-image: var(--bg-left), var(--bg-bottom);
+		background-repeat: no-repeat, no-repeat;
+		background-position: var(--bg-left-position), var(--bg-bottom-position);
+	}
+}
