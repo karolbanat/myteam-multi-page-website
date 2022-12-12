@@ -3,80 +3,508 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./dist/assets/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/css/main.min.css">
-
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./dist/assets/favicon-32x32.png">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="./dist/css/main.min.css">
 
     <title>Frontend Mentor | myteam website challenge - About</title>
 </head>
 
 <body>
+    <a href="#main-content"
+       class="skip-link">Skip to main content</a>
+    <header>
+        <div class="container">
+            <nav aria-label="Primary"
+                 class="primary-navigation">
+                <a href="#"><img src="./dist/assets/logo.svg"
+                         alt="myteam"
+                         class="logo"
+                         data-size="medium"></a>
+                <button aria-controls="primary-nav"
+                        aria-expanded="false"
+                        aria-label="Open menu"
+                        class="toggle-button primary-navigation__menu-toggle">
+                    <img src="./dist/assets/icons/icon-hamburger.svg"
+                         alt=""
+                         class="toggle-button__icon-open">
+                    <img src="./dist/assets/icons/icon-close.svg"
+                         alt=""
+                         class="toggle-button__icon-close">
+                </button>
+                <div id="primary-nav"
+                     class="primary-navigation__nav">
+                    <ul class="primary-navigation__nav-list">
+                        <li><a href="#"
+                               class="link primary-navigation__nav-link">home</a></li>
+                        <li><a href="./about.html"
+                               class="link primary-navigation__nav-link">about</a></li>
+                    </ul>
+                    <a href="./contact.html"
+                       class="button button--light">contact us</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    home
-    about
+    <main id="main-content">
+        <!-- intro section start -->
+        <section aria-labelledby="intro-heading"
+                 class="intro-section | intro-about"
+                 data-space="medium">
+            <div class="container">
+                <div class="intro-grid"
+                     data-grid="uneven">
+                    <h1 id="intro-heading"
+                        class="intro-section__heading">
+                        About
+                    </h1>
+                    <p class="intro-section__text | text-line-decoration"
+                       data-color="accent"
+                       data-screen="large"
+                       data-distance="small">
+                        We help companies build dynamic teams made up of top global talent.
+                        Using our network of passionate professionals we drive innovation
+                        and deliver incredible outcomes. Talented, diverse teams shape the
+                        best products and experiences. We’ll bring those teams to you.</p>
+                </div>
+            </div>
+        </section>
+        <!-- intro section end -->
 
-    contact us
+        <!-- directors section start -->
+        <section aria-labelledby="directors-heading"
+                 class="directors-section | section-spacer bg-primary-700"
+                 data-spacer="medium">
+            <div class="container"
+                 data-inline-size="medium">
+                <h2 id="directors-heading"
+                    class="section-heading text-center">Meet the directors</h2>
+                <ul class="directors-grid">
+                    <li>
+                        <!-- Nikita Marks card start -->
+                        <article id="nikita-card"
+                                 class="director-card">
+                            <img src="./dist/assets/avatars/avatar-nikita.jpg"
+                                 alt=""
+                                 class="director-card__avatar">
+                            <h3 class="director-card__name">Nikita Marks</h3>
+                            <p class="director-card__role">Founder & CEO</p>
+                            <blockquote class="director-card__quote">“It always amazes me how much talent there is in
+                                every corner of the globe.”</blockquote>
+                            <ul class="flex">
+                                <li>
+                                    <a aria-label="Twitter"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="24"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a aria-label="LinkedIn"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="20"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button aria-expanded="false"
+                                    aria-controls="nikita-card"
+                                    aria-label="Expand card"
+                                    class="director-card__expand-button">
+                                <img src="./dist/assets/icons/icon-cross.svg"
+                                     alt="">
+                            </button>
+                        </article>
+                        <!-- Nikita Marks card end -->
+                    </li>
+                    <li>
+                        <!-- Cristian Duncan card start -->
+                        <article id="cristian-card"
+                                 class="director-card">
+                            <img src="./dist/assets/avatars/avatar-christian.jpg"
+                                 alt=""
+                                 class="director-card__avatar">
+                            <h3 class="director-card__name">Cristian Duncan</h3>
+                            <p class="director-card__role">Co-founder & COO</p>
+                            <blockquote class="director-card__quote">“Distributed teams required unique processes. You
+                                need to approach work in a new way.”</blockquote>
+                            <ul class="flex">
+                                <li>
+                                    <a aria-label="Twitter"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="24"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a aria-label="LinkedIn"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="20"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button aria-expanded="false"
+                                    aria-controls="cristian-card"
+                                    aria-label="Expand card"
+                                    class="director-card__expand-button">
+                                <img src="./dist/assets/icons/icon-cross.svg"
+                                     alt="">
+                            </button>
+                        </article>
+                        <!-- Cristian Duncan card end -->
+                    </li>
+                    <li>
+                        <!-- Cruz Hamer card start -->
+                        <article id="cruz-card"
+                                 class="director-card">
+                            <img src="./dist/assets/avatars/avatar-cruz.jpg"
+                                 alt=""
+                                 class="director-card__avatar">
+                            <h3 class="director-card__name">Cruz Hamer</h3>
+                            <p class="director-card__role">Co-founder & CTO</p>
+                            <blockquote class="director-card__quote">“Technology is at the forefront of enabling
+                                distributed teams. That's where we come in.”</blockquote>
+                            <ul class="flex">
+                                <li>
+                                    <a aria-label="Twitter"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="24"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a aria-label="LinkedIn"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="20"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button aria-expanded="false"
+                                    aria-controls="cruz-card"
+                                    aria-label="Expand card"
+                                    class="director-card__expand-button">
+                                <img src="./dist/assets/icons/icon-cross.svg"
+                                     alt="">
+                            </button>
+                        </article>
+                        <!-- Cruz Hamer card end -->
+                    </li>
+                    <li>
+                        <!-- Drake Heaton card start -->
+                        <article id="drake-card"
+                                 class="director-card">
+                            <img src="./dist/assets/avatars/avatar-drake.jpg"
+                                 alt=""
+                                 class="director-card__avatar">
+                            <h3 class="director-card__name">Drake Heaton</h3>
+                            <p class="director-card__role">Business Development Lead</p>
+                            <blockquote class="director-card__quote">“Hiring similar people from similar backgrounds is
+                                a surefire way to stunt innovation.”</blockquote>
+                            <ul class="flex">
+                                <li>
+                                    <a aria-label="Twitter"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="24"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a aria-label="LinkedIn"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="20"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button aria-expanded="false"
+                                    aria-controls="drake-card"
+                                    aria-label="Expand card"
+                                    class="director-card__expand-button">
+                                <img src="./dist/assets/icons/icon-cross.svg"
+                                     alt="">
+                            </button>
+                        </article>
+                        <!-- Drake Heaton card end -->
+                    </li>
+                    <li>
+                        <!-- Griffin Wise card start -->
+                        <article id="griffin-card"
+                                 class="director-card">
+                            <img src="./dist/assets/avatars/avatar-griffin.jpg"
+                                 alt=""
+                                 class="director-card__avatar">
+                            <h3 class="director-card__name">Griffin Wise</h3>
+                            <p class="director-card__role">Lead Marketing</p>
+                            <blockquote class="director-card__quote">“Unique perspectives shape unique products, which
+                                is what you need to survive these days.”</blockquote>
+                            <ul class="flex">
+                                <li>
+                                    <a aria-label="Twitter"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="24"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a aria-label="LinkedIn"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="20"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button aria-expanded="false"
+                                    aria-controls="griffin-card"
+                                    aria-label="Expand card"
+                                    class="director-card__expand-button">
+                                <img src="./dist/assets/icons/icon-cross.svg"
+                                     alt="">
+                            </button>
+                        </article>
+                        <!-- Griffin Wise card end -->
+                    </li>
+                    <li>
+                        <!-- Aden Allan card start -->
+                        <article id="aden-card"
+                                 class="director-card">
+                            <img src="./dist/assets/avatars/avatar-aden.jpg"
+                                 alt=""
+                                 class="director-card__avatar">
+                            <h3 class="director-card__name">Aden Allan</h3>
+                            <p class="director-card__role">Head of Talent</p>
+                            <blockquote class="director-card__quote">“Empowered teams create truly amazing products. Set
+                                the north star and let them follow it.”</blockquote>
+                            <ul class="flex">
+                                <li>
+                                    <a aria-label="Twitter"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="24"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a aria-label="LinkedIn"
+                                       href="#"
+                                       class="social-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="20"
+                                             height="20">
+                                            <path fill="var(--icon-fill)"
+                                                  d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button aria-expanded="false"
+                                    aria-controls="griffin-card"
+                                    aria-label="Expand card"
+                                    class="director-card__expand-button">
+                                <img src="./dist/assets/icons/icon-cross.svg"
+                                     alt="">
+                            </button>
+                        </article>
+                        <!-- Aden Allan card end -->
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- directors section end -->
 
+        <!-- out clients section start -->
+        <section aria-labelledby="our-clients-heading"
+                 class="our-clients-section | section-spacer bg-neutral-800"
+                 data-spacer="medium">
+            <div class="container">
+                <h2 id="our-clients-heading"
+                    class="section-heading text-center">Some of our clients</h2>
+                <ul class="clients-flex">
+                    <li>
+                        <img src="./dist/assets/logos/logo-the-verge.png"
+                             alt="The Verge">
+                    </li>
+                    <li>
+                        <img src="./dist/assets/logos/logo-jakarta-post.png"
+                             alt="The Jakarta Post">
+                    </li>
+                    <li>
+                        <img src="./dist/assets/logos/logo-the-guardian.png"
+                             alt="The Guardian">
+                    </li>
+                    <li>
+                        <img src="./dist/assets/logos/logo-tech-radar.png"
+                             alt="techradar">
+                    </li>
+                    <li>
+                        <img src="./dist/assets/logos/logo-gadgets-now.png"
+                             alt="Gadgets Now">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- out clients section end -->
 
+        <!-- cta section -->
+        <section aria-labelledby="cta-heading"
+                 class="cta">
+            <div class="container"
+                 data-inline-size="small">
+                <div class="cta__container">
+                    <h2 id="cta-heading"
+                        class="section-heading">Ready to get started?</h2>
+                    <a href="./contact.html"
+                       class="button button--dark">contact us</a>
+                </div>
+            </div>
+        </section>
+        <!-- cta section end -->
+    </main>
 
-    About
+    <footer class="primary-footer">
+        <div class="container">
+            <div class="primary-footer__body">
+                <!-- footer nav -->
+                <nav aria-label="footer"
+                     class="primary-footer__navigation">
+                    <a href="#"><img src="./dist/assets/logo.svg"
+                             alt="myteam"
+                             class="logo"
+                             data-size="small"></a>
+                    <ul class="flex">
+                        <li><a href="#"
+                               class="link">home</a></li>
+                        <li><a href="./about.html"
+                               class="link">about</a></li>
+                    </ul>
+                </nav>
 
-    We help companies build dynamic teams made up of top global talent.
-    Using our network of passionate professionals we drive innovation
-    and deliver incredible outcomes. Talented, diverse teams shape the
-    best products and experiences. We’ll bring those teams to you.
+                <!-- footer address -->
+                <address class="primary-footer__address">
+                    <p>987 Hillcrest Lane</p>
+                    <p>Irvine, CA</p>
+                    <p>California 92714</p>
+                    <p>Call Us : 949-833-7432</p>
+                </address>
 
+                <!-- socials list -->
+                <ul class="primary-footer__socials | flex"
+                    style="--flex-spacer: 1.6rem">
+                    <li>
+                        <a aria-label="Facebook"
+                           href="#"
+                           class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 width="24"
+                                 height="24">
+                                <path fill="var(--icon-fill)"
+                                      d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="Pinterest"
+                           href="#"
+                           class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 width="24"
+                                 height="24">
+                                <path fill="var(--icon-fill)"
+                                      d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="Twitter"
+                           href="#"
+                           class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 width="24"
+                                 height="20">
+                                <path fill="var(--icon-fill)"
+                                      d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
 
+                <!-- copyright -->
+                <p class="primary-footer__copyright">Copyright 2020. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 
-    Meet the directors
-
-    “It always amazes me how much talent there is in every corner of the globe.”
-    Nikita Marks
-    Founder & CEO
-
-    “Distributed teams required unique processes. You need to approach work in a new way.”
-    Cristian Duncan
-    Co-founder & COO
-
-    “Technology is at the forefront of enabling distributed teams. That's where we come in.”
-    Cruz Hamer
-    Co-founder & CTO
-
-    “Hiring similar people from similar backgrounds is a surefire way to stunt innovation.”
-    Drake Heaton
-    Business Development Lead
-
-    “Unique perspectives shape unique products, which is what you need to survive these days.”
-    Griffin Wise
-    Lead Marketing
-
-    “Empowered teams create truly amazing products. Set the north star and let them follow it.”
-    Aden Allan
-    Head of Talent
-
-
-
-    Ready to get started?
-
-    contact us
-
-
-
-    home
-    about
-
-    987 Hillcrest Lane
-    Irvine, CA
-    California 92714
-    Call Us : 949-833-7432
-
-    Copyright 2020. All Rights Reserved
-
+    <script src="./dist/js/main.min.js"
+            defer></script>
 </body>
 
 </html>
