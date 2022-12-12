@@ -1,5 +1,11 @@
 @use '../abstracts/mixins' as mxn;
 
+.padding-top-medium-lg {
+	@include mxn.mq(large) {
+		padding-block-start: 5.6rem;
+	}
+}
+
 .section-spacer {
 	padding-block: clamp(10rem, 12.5vw, 14rem);
 

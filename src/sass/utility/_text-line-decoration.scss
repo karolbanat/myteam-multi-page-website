@@ -1,0 +1,56 @@
+@use '../abstracts/mixins' as mxn;
+
+.text-line-decoration {
+	/* defaults */
+	--displayed: block;
+	--distance: 3.2rem;
+	--color: currentColor;
+	--width: 5rem;
+	--height: 0.4rem;
+
+	/* actual line */
+	&::before {
+		content: '';
+		display: var(--displayed);
+		margin-block-end: var(--distance);
+		width: var(--width);
+		height: var(--height);
+		background-color: var(--color);
+	}
+
+	/* variables changing */
+	/* -- color control */
+	&[data-color='primary'] {
+		--color: var(--clr-primary-300);
+	}
+	&[data-color='accent'] {
+		--color: var(--clr-accent-400);
+	}
+
+	/* -- show/hide control */
+	&[data-screen='large'] {
+		@include mxn.max-mq(large) {
+			--displayed: none;
+		}
+	}
+
+	/* margin bottom (distance from text) control */
+	&[data-distance='small'] {
+		--distance: 2.8rem;
+		@include mxn.mq(large) {
+			--distance: 4rem;
+		}
+	}
+	&[data-distance='medium'] {
+		--distance: 3rem;
+		@include mxn.mq(large) {
+			--distance: 5.6rem;
+		}
+	}
+	&[data-distance='large'] {
+		--distance: 3.2rem;
+		@include mxn.mq(large) {
+			--distance: 8rem;
+		}
+	}
+}
