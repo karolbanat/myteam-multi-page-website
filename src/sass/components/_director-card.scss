@@ -1,0 +1,81 @@
+@use '../abstracts/mixins' as mxn;
+
+.director-card {
+	--card-background: var(--clr-neutral-800);
+	--avatar-size: 9.6rem;
+	--button-size: 5.6rem;
+	--button-background: var(--clr-accent-400);
+	--button-rotation: 0deg;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-block-start: 3.2rem;
+	padding-block-end: 5.6rem;
+	padding-inline: 2.4rem;
+	text-align: center;
+	min-height: 100%;
+	background-color: var(--card-background);
+
+	&[data-expanded] {
+		--card-background: var(--clr-neutral-900);
+		--button-rotation: 45deg;
+	}
+
+	& > [data-hidden='true'] {
+		display: none;
+	}
+
+	&__avatar {
+		margin-block-end: 1.6rem;
+		width: var(--avatar-size);
+		aspect-ratio: 1 / 1;
+		border-radius: var(--borr-circle);
+		border: 2px solid var(--clr-primary-200);
+	}
+
+	&__name {
+		font-size: var(--fz-500);
+		font-weight: var(--fw-bold);
+		color: var(--clr-primary-300);
+	}
+
+	&__role {
+		font-size: var(--fz-400);
+		font-style: italic;
+		font-weight: 500;
+	}
+
+	&__quote {
+		margin-block-start: 0.8rem;
+		margin-block-end: 2.4rem;
+		font-size: var(--fz-400);
+	}
+
+	&__expand-button {
+		/* position */
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		/* transformations */
+		translate: -50% 50%;
+		rotate: var(--button-rotation);
+		/* display */
+		display: inline-grid;
+		place-content: center;
+		width: var(--button-size);
+		aspect-ratio: 1 / 1;
+		/* appearance */
+		background-color: var(--button-background);
+		border: none;
+		border-radius: var(--borr-circle);
+		/* other */
+		cursor: pointer;
+		transition: rotate 0.4s ease;
+
+		&:hover,
+		&:focus {
+			--button-rotation: 45deg;
+		}
+	}
+}

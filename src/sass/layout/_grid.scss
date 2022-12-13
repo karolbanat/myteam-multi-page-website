@@ -51,3 +51,18 @@
 		gap: 3rem;
 	}
 }
+
+.directors-grid {
+	display: grid;
+	gap: 5.2rem;
+
+	@include mxn.mq(medium) {
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 7.2rem;
+		column-gap: 1rem;
+	}
+	@include mxn.mq(large) {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 3rem;
+	}
+}
