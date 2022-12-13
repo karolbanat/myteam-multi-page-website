@@ -8,6 +8,9 @@
 		text-align: start;
 	}
 
+	&[data-space='medium'] {
+		--spacer-block-end: clamp(10.8rem, 14.6vw, 12rem);
+	}
 	&[data-space='large'] {
 		--spacer-block-end: clamp(20rem, 32.5vw, 25rem);
 	}

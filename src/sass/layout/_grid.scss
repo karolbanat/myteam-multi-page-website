@@ -28,6 +28,11 @@
 		--first-column: calc(63.5 / 111 * 100%);
 		--second-column: calc(44.5 / 111 * 100%);
 	}
+	&[data-grid='uneven'] {
+		/* sizes from design */
+		--first-column: calc(35 / 111 * 100%);
+		--second-column: calc(73 / 111 * 100%);
+	}
 }
 
 .features-grid {

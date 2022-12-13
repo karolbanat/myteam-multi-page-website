@@ -1,0 +1,13 @@
+@use '../abstracts/mixins' as mxn;
+
+.intro-about {
+	--bg-position-vertical: bottom -10rem;
+	--bg-position-horizontal: right -10rem;
+	background-image: url('../assets/backgrounds/bg-pattern-about-1-mobile-nav-1.svg');
+	background-repeat: no-repeat;
+	background-position: var(--bg-position-vertical) var(--bg-position-horizontal);
+
+	@include mxn.mq(medium) {
+		--bg-position-vertical: bottom;
+	}
+}
