@@ -54,6 +54,7 @@
 
 .directors-grid {
 	display: grid;
+	grid-auto-rows: 1fr;
 	gap: 5.2rem;
 
 	@include mxn.mq(medium) {

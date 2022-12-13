@@ -19,6 +19,7 @@
 
 	&[data-expanded] {
 		--card-background: var(--clr-neutral-900);
+		--button-background: var(--clr-primary-300);
 		--button-rotation: 45deg;
 	}
 
@@ -73,8 +74,12 @@
 		cursor: pointer;
 		transition: rotate 0.4s ease;
 
+		& * {
+			pointer-events: none;
+		}
+
 		&:hover,
-		&:focus {
+		&:focus-visible {
 			--button-rotation: 45deg;
 		}
 	}
