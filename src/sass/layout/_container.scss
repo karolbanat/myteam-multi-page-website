@@ -11,4 +11,7 @@
 		--max-width: 91.7rem;
 		--padding-inline: clamp(2.4rem, -7.5rem + 22.5vw, 9.6rem);
 	}
+	&[data-inline-size='narrow'] {
+		--padding-inline: clamp(2.4rem, -8rem + 27.5vw, 12.6rem);
+	}
 }
