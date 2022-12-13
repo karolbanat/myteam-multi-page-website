@@ -6,6 +6,12 @@
 	}
 }
 
+.max-width-medium-sm {
+	@include mxn.max-mq(medium) {
+		max-width: 16.5rem;
+	}
+}
+
 .section-spacer {
 	padding-block: clamp(10rem, 12.5vw, 14rem);
 
