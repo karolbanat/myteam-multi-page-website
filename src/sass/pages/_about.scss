@@ -11,3 +11,12 @@
 		--bg-position-vertical: bottom;
 	}
 }
+
+.directors-section {
+	.section-heading {
+		margin-block-end: 4.8rem;
+		@include mxn.mq(large) {
+			margin-block-end: 6.4rem;
+		}
+	}
+}
