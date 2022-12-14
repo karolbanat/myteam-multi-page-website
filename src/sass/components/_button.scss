@@ -36,4 +36,13 @@
 		--border-color: currentColor;
 		--border-color-hover: var(--clr-neutral-800);
 	}
+
+	&--primary {
+		--button-text: var(--clr-neutral-800);
+		--button-text-hover: var(--clr-neutral-800);
+		--button-background: var(--clr-neutral-100);
+		--button-background-hover: var(--clr-primary-300);
+		--border-color: var(--button-background);
+		--border-color-hover: var(--button-background-hover);
+	}
 }
