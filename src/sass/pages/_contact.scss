@@ -1,0 +1,18 @@
+@use '../abstracts/mixins' as mxn;
+
+.intro-contact {
+	--bg-top-left-image: url('../assets/backgrounds/bg-pattern-about-2-contact-1.svg');
+	--bg-top-left-position: top left -10rem;
+	--bg-bottom-right-image: url('../assets/backgrounds/bg-pattern-contact-2.svg');
+	--bg-bottom-right-position: bottom -12.5rem right -10rem;
+
+	background-image: var(--bg-bottom-right-image);
+	background-repeat: no-repeat;
+	background-position: var(--bg-bottom-right-position);
+	@include mxn.mq(medium) {
+		--bg-bottom-right-position: bottom right -10rem;
+		background-image: var(--bg-top-left-image), var(--bg-bottom-right-image);
+		background-repeat: no-repeat, no-repeat;
+		background-position: var(--bg-top-left-position), var(--bg-bottom-right-position);
+	}
+}
