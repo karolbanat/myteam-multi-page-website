@@ -105,7 +105,8 @@
                                    type="text"
                                    name="name"
                                    placeholder="Name"
-                                   class="contact-form__input">
+                                   class="contact-form__input"
+                                   required>
                             <p role="alert"
                                aria-live="polite"
                                class="contact-form__error-message"></p>
@@ -116,7 +117,8 @@
                                    type="email"
                                    name="email"
                                    placeholder="Email Address"
-                                   class="contact-form__input">
+                                   class="contact-form__input"
+                                   required>
                             <p role="alert"
                                aria-live="polite"
                                class="contact-form__error-message"></p>
@@ -127,7 +129,8 @@
                                    type="text"
                                    name="company"
                                    placeholder="Comapny Name"
-                                   class="contact-form__input">
+                                   class="contact-form__input"
+                                   required>
                             <p role="alert"
                                aria-live="polite"
                                class="contact-form__error-message"></p>
@@ -138,7 +141,8 @@
                                    type="text"
                                    name="title"
                                    placeholder="Title"
-                                   class="contact-form__input">
+                                   class="contact-form__input"
+                                   required>
                             <p role="alert"
                                aria-live="polite"
                                class="contact-form__error-message"></p>
@@ -148,13 +152,17 @@
                                       id="message"
                                       name="message"
                                       placeholder="Message"
-                                      class="contact-form__textarea"></textarea>
+                                      class="contact-form__textarea"
+                                      required></textarea>
                             <p role="alert"
                                aria-live="polite"
                                class="contact-form__error-message"></p>
                         </div>
                         <button type="submit"
                                 class="button button--primary">Submit</button>
+                        <p role="alert"
+                           aria-live="polite"
+                           class="contact-form__success-message">Email sent successfully</p>
                     </form>
                 </div>
             </div>
@@ -236,6 +244,7 @@
     </footer>
 
     <script src="./dist/js/main.min.js"></script>
+    <script src="./dist/js/contact-form.min.js"></script>
 </body>
 
 </html>

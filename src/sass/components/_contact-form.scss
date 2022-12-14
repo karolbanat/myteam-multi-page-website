@@ -54,4 +54,14 @@
 		font-style: italic;
 		color: var(--clr-accent-400);
 	}
+
+	&__success-message {
+		display: none;
+		font-size: var(--fz-400);
+		color: var(--clr-primary-300);
+
+		&.visible {
+			display: block;
+		}
+	}
 }
