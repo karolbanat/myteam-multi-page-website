@@ -1,0 +1,40 @@
+@use '../abstracts/mixins' as mxn;
+
+.ask-us-about {
+	&__heading {
+		margin-block-start: 1.6rem;
+		margin-block-end: 4rem;
+		font-size: var(--fz-600);
+		line-height: 1.5;
+		color: var(--clr-accent-400);
+		@include mxn.mq(medium) {
+			margin-block-start: 2.4rem;
+			margin-block-end: 2.4rem;
+		}
+		@include mxn.mq(large) {
+			margin-block-start: 1.6rem;
+			margin-block-end: 3.2rem;
+		}
+	}
+
+	&__list {
+		display: grid;
+		gap: 0.8rem;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 2.4rem;
+		font-size: var(--fz-500);
+	}
+
+	&__icon {
+		--size: 7.2rem;
+		flex-shrink: 0;
+		width: 7.2rem;
+		aspect-ratio: 1 / 1;
+		object-fit: contain;
+		object-position: center;
+	}
+}
