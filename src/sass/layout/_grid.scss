@@ -33,6 +33,17 @@
 		--first-column: calc(35 / 111 * 100%);
 		--second-column: calc(73 / 111 * 100%);
 	}
+	&[data-grid='even'] {
+		--first-column: 1fr;
+		--second-column: 1fr;
+		--intro-spacer: 5.6rem;
+		@include mxn.mq(medium) {
+			--intro-spacer: 6.4rem;
+		}
+		@include mxn.mq(large) {
+			--intro-spacer: 3rem;
+		}
+	}
 }
 
 .features-grid {
