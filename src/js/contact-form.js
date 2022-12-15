@@ -10,8 +10,8 @@ const EMAIL_REGEX =
 	/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 const validateTextInputs = () => {
-	/* first maps to boolean values so it will display error for every input that has error */
-	return textInputs.map(validateInput).every(el => el);
+	/* only first text input error will be displayed after submit */
+	return textInputs.every(validateInput);
 };
 
 const validateInput = inputElement => {
@@ -41,17 +41,29 @@ const validateEmailInput = input => {
 const displayError = (inputElement, message = 'This field is required') => {
 	const parentInputContainer = inputElement.closest('.contact-form__input-container');
 	const errorElement = parentInputContainer.querySelector('.contact-form__error-message');
+	const hiddenInputLabel = createHiddenSpan(inputElement.getAttribute('aria-label'));
 	parentInputContainer.setAttribute('data-error', true);
-	errorElement.innerText = message;
+
+	/* append hidden span with field name and message to error element */
+	errorElement.appendChild(hiddenInputLabel);
+	errorElement.appendChild(document.createTextNode(message));
+};
+
+const createHiddenSpan = innerText => {
+	const span = document.createElement('span');
+	span.classList.add('visually-hidden');
+	span.innerText = innerText + ' field.';
+	return span;
 };
 
 const removeError = inputElement => {
 	const parentInputContainer = inputElement.closest('.contact-form__input-container');
 	const errorElement = parentInputContainer.querySelector('.contact-form__error-message');
 	parentInputContainer.removeAttribute('data-error');
-	errorElement.innerText = '';
+	errorElement.innerHTML = '';
 };
 
+/* event handlers */
 submitButton.addEventListener('click', e => {
 	e.preventDefault();
 	const everyTextInputIsValid = validateTextInputs();
