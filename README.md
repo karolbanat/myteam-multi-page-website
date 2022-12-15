@@ -4,8 +4,8 @@ This is a solution to the [myteam website challenge on Frontend Mentor](https://
 
 ## Links
 
-- Solution URL: [FrontEnd Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [FrontEnd Mentor Solution Page](https://www.frontendmentor.io/solutions/myteam-multipage-website-5SY1XMZD_k)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/myteam-multi-page-website/)
 
 ## Built with
 
