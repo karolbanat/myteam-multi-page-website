@@ -10,8 +10,8 @@ const EMAIL_REGEX =
 	/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 const validateTextInputs = () => {
-	/* only first text input error will be displayed after submit */
-	return textInputs.every(validateInput);
+	/* first validates inputs and displays errors for invalid ones, then checks if all have been valid */
+	return textInputs.map(validateInput).every(el => el);
 };
 
 const validateInput = inputElement => {
@@ -39,6 +39,9 @@ const validateEmailInput = input => {
 };
 
 const displayError = (inputElement, message = 'This field is required') => {
+	/* first remove previous error */
+	removeError(inputElement);
+
 	const parentInputContainer = inputElement.closest('.contact-form__input-container');
 	const errorElement = parentInputContainer.querySelector('.contact-form__error-message');
 	const hiddenInputLabel = createHiddenSpan(inputElement.getAttribute('aria-label'));
